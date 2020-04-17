@@ -7,6 +7,7 @@ MicroWise is a console based application that, when given the desired optimizati
 <h2>How to Use?</h2>
 step 01: Clone the project 
 
+
 step 02: Install dependencies
 ````````````````````````````````````
 cd MicroWise
