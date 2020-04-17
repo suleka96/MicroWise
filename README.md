@@ -1,4 +1,4 @@
-![picture](images/cite.png)
+![picture](images/logo.png)
 
 <h1>MicroWise</h1>
 
@@ -6,14 +6,11 @@ MicroWise is a console based application that, when given the desired optimizati
 
 <h2>How to Use?</h2>
 step 01: Clone the project 
-````````````````````````````````````
-git clone https://github.com/suleka96/MicroWise.git
-````````````````````````````````````
 
 step 02: Install dependencies
 ````````````````````````````````````
 cd MicroWise
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ````````````````````````````````````
 
 step 03: Navigate into the project's optimizer folder
