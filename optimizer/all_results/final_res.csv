@@ -1,0 +1,2 @@
+bestGC,default_latency,optimized_latency,improvement,in_fid
+ParallelGC,97.0,86.0,11.34020618556701,no

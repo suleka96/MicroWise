@@ -1,0 +1,77 @@
+Name,Default_Val,Type,Range
+CMSInitiatingOccupancyFraction,-1,positive int,50/90
+UseCMSInitiatingOccupancyOnly,FALSE,bool,
+UseCMSInitiatingOccupancyOnly,FALSE,bool,
+CMSParallelRemarkEnabled,TRUE,bool,
+ScavengeBeforeFullGC,TRUE,bool,
+ConcGCThreads,0,positive int,4/8
+ParallelGCThreads,2,positive int,1/12
+UseParNewGC,FALSE,bool,
+CMSClassUnloadingEnabled,TRUE,bool,
+CMSAbortablePrecleanMinWorkPerIteration,100,positive int,100/500
+CMSAbortablePrecleanWaitMillis,100,positive int,50/150
+CMSBitMapYieldQuantum,10485760,positive int,10000000/30000000
+CMSBootstrapOccupancy,50,positive int,40/70
+CMSConcMarkMultiple,32,positive int,20/50
+CMSCoordinatorYieldSleepCount,10,positive int,5/13
+CMSExpAvgFactor,50,positive int,40/70
+CMSIndexedFreeListReplenish,4,positive int,2/5
+CMSIsTooFullPercentage,98,positive int,90/99
+CMSLargeCoalSurplusPercent,0.95,double,0/2
+CMSLargeSplitSurplusPercent,1,double,0/3
+CMSMaxAbortablePrecleanLoops,0,positive int,4/12
+CMSMaxAbortablePrecleanTime,500,positive int,100/900
+CMSOldPLABMax,1024,positive int,1000/5000
+CMSOldPLABMin,16,positive int,13/18
+CMSOldPLABNumRefills,4,positive int,2/6
+CMSOldPLABReactivityFactor,2,positive int,1/5
+CMSOldPLABToleranceFactor,4,positive int,2/6
+CMSPrecleanDenominator,3,positive int,2/7
+CMSPrecleanIter,3,positive int,2/7
+OldPLABSize,16,choice,16_32_64_128_256_512_1024_2048
+UseCMSBestFit,TRUE,bool,
+UseCMSCollectionPassing,TRUE,bool,
+CMSPrecleanNumerator,2,positive int,0/2
+CMSPrecleanThreshold,1000,positive int,800/1300
+CMSRemarkVerifyVariant,1,choice,1_2
+CMSRescanMultiple,32,positive int,20/40
+CMSSamplingGrain,16384,positive int,14000/18000
+CMSScheduleRemarkEdenPenetration,50,positive int,30/70
+CMSScheduleRemarkEdenSizeThreshold,2097152,positive int,1000000/4000000
+CMSScheduleRemarkSamplingRatio,5,positive int,3/10
+CMSSmallCoalSurplusPercent,1.05,double,1/4
+CMSSmallSplitSurplusPercent,1.1,double,1/4
+CMSTriggerRatio,80,positive int,60/90
+CMSWaitDuration,2000,positive int,900/2000
+CMSWorkQueueDrainThreshold,10,positive int,5/15
+CMS_FLSPadding,1,positive int,1/4
+CMS_FLSWeight,75,positive int,50/80
+CMS_SweepPadding,1,positive int,1/4
+CMS_SweepTimerThresholdMillis,10,positive int,5/15
+CMS_SweepWeight,75,positive int,50/80
+CMSAbortSemantics,FALSE,bool,
+CMSCleanOnEnter,TRUE,bool,
+CMSCompactWhenClearAllSoftRefs,TRUE,bool,
+CMSDumpAtPromotionFailure,FALSE,bool,
+CMSExtrapolateSweep,FALSE,bool,
+CMSIncrementalMode,FALSE,bool,
+CMSIncrementalPacing,TRUE,bool,
+CMSLoopWarn,FALSE,bool,
+CMSOldPLABResizeQuicker,FALSE,bool,
+CMSPrecleanRefLists1,TRUE,bool,
+CMSPrecleanRefLists2,FALSE,bool,
+CMSPrecleanSurvivors1,FALSE,bool,
+CMSPrecleanSurvivors2,TRUE,bool,
+CMSPrecleaningEnabled,TRUE,bool,
+CMSReplenishIntermediate,TRUE,bool,
+CMSScavengeBeforeRemark,FALSE,bool,
+CMSSplitIndexedFreeListBlocks,TRUE,bool,
+CMSYield,TRUE,bool,
+ExplicitGCInvokesConcurrent,FALSE,bool,
+ExplicitGCInvokesConcurrentAndUnloadsClasses,FALSE,bool,
+CMSConcurrentMTEnabled,TRUE,bool,
+ParGCArrayScanChunk,50,int,40/70
+ParGCUseLocalOverflow,TRUE,bool,
+ParGCTrimOverflow,TRUE,bool,
+ParGCDesiredObjsFromOverflowList,20,int,10/40
+CMSParallelSurvivorRemarkEnabled,TRUE,bool,

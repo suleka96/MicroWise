@@ -1,0 +1,19 @@
+Name,Default_Val,Type,Range
+G1RefProcDrainInterval,10,positive int,8/13
+G1SATBBufferSize,1024,positive int,1024/1060
+G1SATBBufferEnqueueingThresholdPercent,60,positive int,50/70
+G1UpdateBufferSize,256,choice,64_128_256_512_1024_2048
+G1ConfidencePercent,50,positive int,20/70
+G1ConcRefinementServiceIntervalMillis,300,positive int,100/400
+G1ConcMarkStepDurationMillis,10,double,4/12
+G1ConcRSHotCardLimit,4,positive int,3/20
+G1HeapWastePercent,5,positive int,4/20
+G1MixedGCCountTarget,8,positive int,5/20
+G1ReservePercent,10,positive int,4/12
+G1RSetUpdatingPauseTimePercent,10,positive int,8/20
+G1RSetScanBlockSize,64,choice,16_32_64_128_256_512_1024
+G1UseAdaptiveConcRefinement,TRUE,bool,
+InitiatingHeapOccupancyPercent,45,positive int,30/60
+ParallelGCThreads,6,positive int,1/12
+MaxGCPauseMillis,200,positive int,50/250
+ParallelRefProcEnabled,FALSE,bool,

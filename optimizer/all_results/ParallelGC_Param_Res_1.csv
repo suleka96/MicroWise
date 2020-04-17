@@ -1,0 +1,11 @@
+AlwaysTenure,NeverTenure,ParallelGCThreads,ParallelGCBufferWastePct,MaxGCPauseMillis,UseMaximumCompactionOnSystemGC,ParallelOldDeadWoodLimiterMean,ParallelOldDeadWoodLimiterStdDev,AdaptiveSizeDecrementScaleFactor,AdaptiveSizeMajorGCDecayTimeScale,AdaptiveSizePolicyCollectionCostMargin,AdaptiveSizeThroughPutPolicy,OldPLABSize,PLABWeight,ResizeOldPLAB,SurvivorPadding,TargetSurvivorRatio,TenuredGenerationSizeIncrement,TenuredGenerationSizeSupplement,TenuredGenerationSizeSupplementDecay,UseAdaptiveGCBoundary,UseAdaptiveGenerationSizePolicyAtMajorCollection,UseAdaptiveGenerationSizePolicyAtMinorCollection,UseAdaptiveSizeDecayMajorGCCost,UseAdaptiveSizePolicyFootprintGoal,YoungGenerationSizeIncrement,YoungPLABSize,YoungGenerationSizeSupplement,YoungGenerationSizeSupplementDecay,Mean,Stddv,Median,Per_75,Per_90,Per_95,Per_99,Throughput,Error
+0,0,7,13,87,1,80,70,1,17,34,1,1024,51,0,3,25,17,79,7,0,0,1,1,1,22,1024,80,7,21.58,69.34,11.0,24.0,57.0,66.0,90.0,433.37,0
+1,1,8,13,150,1,49,52,3,15,58,0,512,71,0,3,50,32,88,2,0,1,1,0,0,32,2048,87,8,21.8,56.57,11.0,25.0,57.0,68.0,95.0,428.34,0
+0,1,5,8,122,1,81,62,5,17,46,0,512,74,1,2,25,26,78,6,1,0,1,0,0,15,4096,63,7,22.24,78.15,11.0,25.0,57.0,67.0,90.0,423.92,0
+1,1,1,10,184,0,49,64,4,18,52,0,512,65,1,3,50,16,74,8,1,1,0,0,0,21,1024,75,9,21.27,46.61,11.0,25.0,57.0,67.0,87.0,453.36,0
+0,0,8,10,51,0,40,51,4,15,34,1,2048,53,0,4,75,19,77,5,1,0,1,1,1,21,2048,69,8,21.14,37.62,10.0,23.0,56.0,66.0,92.0,436.69,0
+0,0,4,14,249,0,68,63,1,16,38,1,512,66,0,2,25,33,77,3,0,0,0,1,0,38,2048,73,2,22.59,48.25,11.0,26.0,58.0,68.0,95.0,412.77,0
+0,0,7,14,231,0,73,58,5,10,40,1,2048,74,0,4,50,33,85,3,0,1,0,1,0,24,4096,63,7,21.07,50.2,11.0,23.0,56.0,66.0,89.0,452.98,0
+0,0,10,13,185,0,42,88,1,17,30,1,1024,59,1,4,25,39,75,3,1,0,0,0,1,19,2048,79,1,22.16,109.05,11.0,25.0,57.0,68.0,91.0,426.59,0
+0,0,3,12,87,0,45,66,1,10,37,0,512,72,1,2,75,21,86,4,0,0,1,1,1,24,2048,88,9,20.58,60.35,10.0,22.0,55.0,67.0,98.0,446.87,0
+0,0,11,7,94,1,56,59,5,9,52,1,1024,45,0,3,25,33,89,2,0,0,1,1,0,34,1024,75,8,22.0,49.11,11.0,25.0,58.0,68.0,93.0,425.82,0

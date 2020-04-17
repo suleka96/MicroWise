@@ -1,0 +1,30 @@
+Name,Type,Range
+AlwaysTenure,bool,
+NeverTenure,bool,
+ParallelGCThreads,positive int,1/12
+ParallelGCBufferWastePct,positive int,7/15
+MaxGCPauseMillis,positive int,50/250
+UseMaximumCompactionOnSystemGC,bool,
+ParallelOldDeadWoodLimiterMean,positive int,30/90
+ParallelOldDeadWoodLimiterStdDev,positive int,50/90
+AdaptiveSizeDecrementScaleFactor,positive int,1/6
+AdaptiveSizeMajorGCDecayTimeScale,positive int,8/20
+AdaptiveSizePolicyCollectionCostMargin,positive int,30/60
+AdaptiveSizeThroughPutPolicy,choice,0_1
+OldPLABSize,choice,512_1024_2048
+PLABWeight,positive int,40/80
+ResizeOldPLAB,bool,
+SurvivorPadding,positive int,2/5
+TargetSurvivorRatio,choice,25_50_75
+TenuredGenerationSizeIncrement,positive int,15/40
+TenuredGenerationSizeSupplement,positive int,70/90
+TenuredGenerationSizeSupplementDecay,positive int,2/10
+UseAdaptiveGCBoundary,bool,
+UseAdaptiveGenerationSizePolicyAtMajorCollection,bool,
+UseAdaptiveGenerationSizePolicyAtMinorCollection,bool,
+UseAdaptiveSizeDecayMajorGCCost,bool,
+UseAdaptiveSizePolicyFootprintGoal,bool,
+YoungGenerationSizeIncrement,positive int,15/40
+YoungPLABSize,choice,512_1024_2048_4096
+YoungGenerationSizeSupplement,positive int,60/90
+YoungGenerationSizeSupplementDecay,positive int,1/10
