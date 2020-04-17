@@ -1,13 +1,32 @@
-<h1>CitationReferenceRetriever</h1>
+![picture](images/cite.png)
+
+<h1>MicroWise</h1>
 
 MicroWise is a console based application that, when given the desired optimization and tuning parameter configurations, optimizes the performance of a given Microservice. A dashboard is also available to analyse the overview of the optimization process.
 
 <h2>How to Use?</h2>
 step 01: Clone the project 
+````````````````````````````````````
+git clone https://github.com/suleka96/MicroWise.git
+````````````````````````````````````
+
 step 02: Install dependencies
-step 02: Navigate into the project's optimizer folder
-step 03: Copy Microservice jar inside this folder
-step 04: Execute MicroWise
+````````````````````````````````````
+cd MicroWise
+pip install -r requirements.txt
+````````````````````````````````````
+
+step 03: Navigate into the project's optimizer folder
+````````````````````````````````````
+cd optimizer
+````````````````````````````````````
+
+step 04: Copy Microservice jar inside this folder
+
+step 05: Execute MicroWise
+````````````````````````````````````
+python3 Optimizehyperopt.py
+````````````````````````````````````
 
 <h2>How to View Results?</h2>
 The <b>all_results</b> folder inside the optimization folder containes all the result files created during the optimization process. The <b>final optimal JVM parameter configuration that GC</b> can be found in the <b>final_parameter_configuration.txt</b> file. 
