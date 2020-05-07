@@ -570,13 +570,14 @@ def paraTest():
         print(best)
         getImprovementPercentage(trials, collector)
 
-def writeFinalResult(nameCollector,default,latencyBest,improv,inFID):
+def writeFinalResult(nameCollector,default,latencyBest,improv,inFID,iteration):
     optimalLabelList = []
     optimalLabelList.append("bestGC")
     optimalLabelList.append("default_latency")
     optimalLabelList.append("optimized_latency")
     optimalLabelList.append("improvement")
     optimalLabelList.append("in_fid")
+    optimalLabelList.append("iteration")
 
     optimalValList = []
     optimalValList.append(nameCollector)
@@ -584,9 +585,10 @@ def writeFinalResult(nameCollector,default,latencyBest,improv,inFID):
     optimalValList.append(latencyBest)
     optimalValList.append(improv)
     optimalValList.append(inFID)
+    optimalValList.append(iteration)
 
 
-    with open("all_results/final_res.csv", mode='w') as opt_file:
+    with open("50_conc/final_res.csv", mode='w') as opt_file:
         writer = csv.writer(opt_file, delimiter=',')
         writer.writerow(optimalLabelList)
         writer.writerow(optimalValList)
@@ -603,7 +605,7 @@ def writeBestParams():
         improv = maxIteration['Default_improv'].values[0]
         iteration = maxIteration['Iteration'].values[0]
 
-        writeFinalResult(nameCollector,default,latencyBest,improv,"yes")
+        writeFinalResult(nameCollector,default,latencyBest,improv,"yes",str(iteration))
 
         if (nameCollector == "SerialGC"):
             FlagFilename = "./all_results/Mod_JVMFlags_" + nameCollector + "_Para_" + str(iteration) + ".csv"
@@ -628,7 +630,7 @@ def writeBestParams():
         improv = collectorBest['Default_improv'].values[0]
         FlagFilename, paramFilename = getFileNames(collectorName)
 
-        writeFinalResult(nameCollector, default, latencyBest, improv,"no")
+        writeFinalResult(nameCollector, default, latencyBest, improv,"no","0")
 
 
     df = pd.read_csv(paramFilename)
@@ -1042,7 +1044,7 @@ def writeConfigurations():
     configValList.append(microCore)
 
 
-    with open("all_results/configurations.csv", mode='w') as opt_file:
+    with open("50_conc/configurations.csv", mode='w') as opt_file:
         writer = csv.writer(opt_file, delimiter=',')
         writer.writerow(configNameList)
         writer.writerow(configValList)
